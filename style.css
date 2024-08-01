@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px whitesmoke;
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: none;
+    background-image: url(image\ 001.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100x;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*
+    border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+.hedings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px ;
+}
+.btn{padding: 10px 35px;
+    background-color:transparent ;
+    border:1px solid black;
+    color: black;
+    outline: none;
+    transition: .10s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(234, 112, 112);
+    color: black;
+    box-shadow: 0 0 5px rgb(232, 138, 138),0 0px rgb(225, 145, 145),0 0 15px rgb(232, 138, 138) ;
+    font-weight: bold;
+}
+/*About section*/
+#About{
+    display: flex;
+    flex-direction: column;
+    box-sizing:content-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 40px 0px ;
+}
+#pic{
+    display: flex;
+}
+
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/*project section*/
+#project{
+    display: flex;
+    flex-direction: column;
+    box-sizing:content-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 40px 0px ;
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }
+    footer ul {
+    list-style: none;
+    padding: 0;
+    }
+    footer ul li {
+    display: inline;
+    margin: 0 0.5em;
+    }
+    footer ul li a {
+    color: white;
+    text-decoration: none;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    nav ul li {
+    margin: 0.5em 0;
+    }
+    }
+
+
+
+
